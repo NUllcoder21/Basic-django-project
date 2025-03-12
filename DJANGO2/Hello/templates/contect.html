@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block title %} Contect{% endblock title %}
+{% block body %}
+<style>
+    
+    /* Centering the form */
+    .container {
+      max-width: 600px;
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    /* Styling form elements */
+    .form-group label {
+      font-weight: bold;
+    }
+  
+    .form-control {
+      border-radius: 5px;
+      padding: 10px;
+      border: 1px solid #ced4da;
+    }
+  
+    /* Submit button styling */
+    .btn-primary {
+      background-color: #007bff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      transition: background 0.3s ease-in-out;
+    }
+  
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+  </style>
+<div class="container-fuiled px-0 mb-3">
+    <img src="https://images.unsplash.com/photo-1551806235-6692cbfc690b?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29udGVjdCUyMHBob25lJTIwcGljdHVyZXxlbnwwfHwwfHx8MA%3D%3D"class="d-block w-100 mx-0" alt="First slide" height="350">
+</div>
+<div class="container mb-3 ">
+    <h1 class="text-center"> Contact Us </h1>
+    <form method="post" action="/contect"  >
+     {% csrf_token %}
+    <div class="form-group">
+        <label for="name" >Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+      </div>
+    <div class="form-group">
+        <label for="email" >Email address</label>
+        <input type="email" class="form-control" id="email" name="email"placeholder="Enter you Email">
+      </div>
+      <div class="form-group">
+        <label for="phone" >Phone number</label>
+        <input type="phone" class="form-control" id="phone" name="phone" placeholder="Enter you phone number">
+      </div>
+      <div class="form-group mb-3">
+        <label for="desc" >Tell me what do you want to contect me for...</label>
+        <textarea class="form-control" id="disc" rows="3" name="desc"> </textarea>
+      </div>
+     <button  class="btn btn-primary"type="submit">Submit</button>
+
+    </form>
+</div>
+</div>
+{% endblock body %}

@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block title %}Login - Vishal Ice Creams{% endblock title %}
+
+{% block body %}
+<div class="container mt-5">
+    <div class="d-flex justify-content-center align-items-center" style="height: 80vh;">
+        <div class="card p-4 shadow-lg rounded" style="width: 380px;">
+            <h2 class="text-center">Login</h2>
+            <form action="{% url 'user_login' %}" method="post">
+                {% csrf_token %}
+
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="alert alert-danger text-center">{{ message }}</div>
+                    {% endfor %}
+                {% endif %}
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" autocomplete="email" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <div class="input-group">
+                        <input type="password" id="password" name="password" class="form-control" placeholder="Enter your password" autocomplete="current-password" required>
+                        <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+                            <i class="fa fa-eye-slash"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="remember_me" name="remember_me">
+                    <label class="form-check-label" for="remember_me">Remember Me</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Login</button>
+            </form>
+            
+            <p class="mt-3 text-center">Don't have an account? <a href="{% url 'signup' %}">Sign up</a></p>
+        </div>
+    </div>
+</div>
+
+<!-- Font Awesome for icons -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+
+<!-- JavaScript for toggling password visibility -->
+<script>
+    document.getElementById('togglePassword').addEventListener('click', function() {
+        let passwordField = document.getElementById('password');
+        let icon = this.querySelector('i');
+
+        if (passwordField.type === 'password') {
+            passwordField.type = 'text';
+            icon.classList.replace('fa-eye-slash', 'fa-eye'); // Corrected here
+        } else {
+            passwordField.type = 'password';
+            icon.classList.replace('fa-eye', 'fa-eye-slash'); // Corrected here
+        }
+    });
+</script>
+
+{% endblock body %}

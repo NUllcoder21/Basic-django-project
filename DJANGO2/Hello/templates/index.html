@@ -1,0 +1,203 @@
+{% extends "base.html" %}
+{% block title %} Home{% endblock title %}
+{% block body %}
+<div class="container-fluid px-0">
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="https://plus.unsplash.com/premium_photo-1708769593100-c5e0af78f3d1?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2Fyb3VzZWwlMjBpbm5lciUyMGltYWdlJTIwb2YlMjBpY2UlMjBjcmVhbXxlbnwwfHwwfHx8MA%3D%3D" class="d-block w-100" alt="..." height="400px">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Welcome to best ice cream of Bihar</h5>
+          <p>I know you eat icecreams but I know you have not eaten the best ice cream of Bihar</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="https://images.unsplash.com/photo-1672945308794-66323e2bbecf?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2Fyb3VzZWwlMjBpbm5lciUyMGltYWdlJTIwb2YlMjBpY2UlMjBjcmVhbXxlbnwwfHwwfHx8MA%3D%3D" class="d-block w-100" alt="..." height="400px">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>We serve love with our IceCreams</h5>
+          <p>Bihar's best Icecreams</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="https://images.unsplash.com/photo-1523789041244-189ec8ac4e07?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNhcm91c2VsJTIwaW5uZXIlMjBpbWFnZSUyMG9mJTIwaWNlJTIwY3JlYW18ZW58MHx8MHx8fDA%3D" class="d-block w-100" alt="..." height="400px">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Inaugurated by PM Modi</h5>
+          <p>This ice cream shop was inaugurated by PM Modi</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<div class="container-fluid my-3">
+
+<h1 class="my-4 text-center">Select from our range of ice cream</h1>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://media.istockphoto.com/id/157472912/photo/ice-cream-composition-on-a-bowl.webp?a=1&b=1&s=612x612&w=0&k=20&c=e1yPCusQJl2scx955yuv9LUcbx5e7OcARC_VgEDdz5Y=" class="d-block w-100" alt="..." height="230px">
+        <div class="card-body">
+          <p class="card-text">Chocolate Delight Ice Cream.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">see more</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Buy now</button>
+            </div>
+            <small class="text-body-secondary">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://media.istockphoto.com/id/162454628/photo/strawberry-ice-cream-cone.jpg?s=612x612&w=is&k=20&c=h1IjxO-AY3J8cFoFP5gx6xY1Ms3mv8cYhLmyQnvZhsk=" class="d-block w-100" alt="..." height="230px">
+        <div class="card-body">
+          <p class="card-text">Strawberry Bliss..</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary" onclick="window.location.href='/icecream-details'">
+                See More
+              </button>
+              
+              <button type="button" class="btn btn-sm btn-outline-secondary">Buy now</button>
+            </div>
+            <small class="text-body-secondary">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://media.istockphoto.com/id/657073780/photo/rajwari-or-rajwadi-sweet-kesar-badam-pista-kulfi-or-ice-cream-candy.jpg?s=612x612&w=0&k=20&c=cXhI8hVEhYc5inbPXt-YWbUYjlJlGC2TdRd_Xkn56Ig=" class="d-block w-100" alt="..." height="230px">
+        <div class="card-body">
+          <p class="card-text">Rajwadi Kesar Badam Pista Kulfi.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">See more</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Buy now</button>
+            </div>
+            <small class="text-body-secondary">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://media.istockphoto.com/id/1323369382/photo/collection-of-colorful-summer-frozen-desserts-bottom-border-on-a-pink-background.jpg?s=612x612&w=0&k=20&c=f-HAIM-ne9EuEoyzNoQemtR9DQxovFuj2cUWl27Q0uU=" class="d-block w-100" alt="..." height="230px">
+        <div class="card-body">
+          <p class="card-text">Summer Chill Collection..</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">See more</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Buy now</button>
+            </div>
+            <small class="text-body-secondary">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://media.istockphoto.com/id/1165579122/photo/ice-cream-covered-with-chocolate-vanilla-and-almonds-on-a-wood-surface.jpg?s=612x612&w=0&k=20&c=F8PLgB9wnb3s8gvWMz9vehD3zGDLIIE7f8mOMSw9QpY=" class="d-block w-100" alt="..." height="230px">
+        <div class="card-body">
+          <p class="card-text">Choco Almond Crunch.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">See more</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Buy now</button>
+            </div>
+            <small class="text-body-secondary">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://media.istockphoto.com/id/1221606749/photo/homemade-delicious-strawberry-ice-cream.jpg?s=612x612&w=0&k=20&c=tdNZi-YveQhgR4eRaEtkGkSv_WutYM4PrSxuufv2DD8=" class="d-block w-100" alt="..." height="230px">
+        <div class="card-body">
+          <p class="card-text">Fresh Strawberry Scoop.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">See more</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Buy now</button>
+            </div>
+            <small class="text-body-secondary">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://media.istockphoto.com/id/855447930/photo/various-of-ice-cream-flavor-in-cones-blueberry-strawberry-pistachio-almond-orange-and-cherry.jpg?s=612x612&w=0&k=20&c=5gORBDFO-7PoSb66PrlyAYOq18OxcM6OjWmap-0hNC4=" class="d-block w-100" alt="..." height="230px">
+        <div class="card-body">
+          <p class="card-text">Assorted Ice Cream Cones.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">See more</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Buy now</button>
+            </div>
+            <small class="text-body-secondary">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://media.istockphoto.com/id/2159007517/photo/cute-boy-eating-flavored-ice-cream-on-gray-background.jpg?s=612x612&w=0&k=20&c=-aATCN7c0bArWMzsAksmreaWAFr-6sODUFMlDB2kQZc=" class="d-block w-100" alt="..." height="230px">
+        <div class="card-body">
+          <p class="card-text">Rainbow Swirl.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">See more</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Buy now</button>
+            </div>
+            <small class="text-body-secondary">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://media.istockphoto.com/id/1029717978/photo/the-little-girl-in-home-eats-a-dessert-stock-image.jpg?s=612x612&w=0&k=20&c=rm4wR-94_p686E-DYxKqNK9dXDlxmH0ylyzwl5ZF1-4=" class="d-block w-100" alt="..." height="230px">
+        <div class="card-body">
+          <p class="card-text">Strawberry Delight.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">See more</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Buy now</button>
+            </div>
+            <small class="text-body-secondary">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-dark text-white text-center py-3 mt-5">
+  <p class="mb-1">&copy; 2025 Vishal Ice Creams. All Rights Reserved.</p>
+  <p>
+    <a href="#" class="text-white mx-2">Privacy Policy</a> |
+    <a href="#" class="text-white mx-2">Terms & Conditions</a>
+  </p>
+  <p>
+    <a href="https://facebook.com" class="text-white mx-2">Facebook</a>
+    <a href="https://twitter.com" class="text-white mx-2">Twitter</a>
+    <a href="https://instagram.com" class="text-white mx-2">Instagram</a>
+  </p>
+</footer>
+{% endblock body %}

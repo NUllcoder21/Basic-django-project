@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% block title %} About Us {% endblock title %}
+
+{% block head %}
+<style>
+  /* Styling for the header image */
+  .header-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  /* About section styling */
+  .about-container {
+    max-width: 850px;
+    background: #fff3e0;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  /* Headings */
+  .about-heading {
+    font-size: 36px;
+    font-weight: bold;
+    color: #d35400;
+    margin-bottom: 20px;
+  }
+
+  /* Paragraph styling */
+  .about-text {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+    text-align: justify;
+  }
+
+  /* Highlighted text */
+  .highlight {
+    color: #e67e22;
+    font-weight: bold;
+  }
+
+  /* Button styling */
+  .btn-explore {
+    background: #ff6f61;
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .btn-explore:hover {
+    background: #e74c3c;
+    color: white;
+  }
+</style>
+{% endblock head %}
+
+{% block body %}
+<!-- Fixed Header Image -->
+
+
+<div class="container about-container">
+  <h1 class="about-heading">About Us</h1>
+  <p class="about-text">
+    Welcome to <span class="highlight">Sweet Scoops</span>, where we serve happiness in every scoop! 
+    We believe that ice cream is more than just a dessert—it's an experience of joy, nostalgia, and celebration.
+  </p>
+
+  <p class="about-text">
+    Our journey started with a simple dream: to craft the <strong>richest, creamiest, and most delightful</strong> ice creams 
+    using the finest ingredients. Whether you crave <strong>classic vanilla, indulgent chocolate, or adventurous fruit blends</strong>, 
+    we have a flavor for everyone.
+  </p>
+
+  <p class="about-text">
+    Our secret? We make our ice cream fresh daily, using <strong>natural ingredients, farm-fresh milk, and zero preservatives</strong>. 
+    We’re committed to creating an <strong>unforgettable experience</strong> for our customers—one scoop at a time!
+  </p>
+
+  <a href="/menu" class="btn btn-explore mt-3">Explore Our Flavors</a>
+
+</div>
+{% endblock body %}
